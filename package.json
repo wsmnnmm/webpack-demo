@@ -1,0 +1,35 @@
+{
+  "name": "webpack-demo",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack",
+    "build:analyze": "set ANALYZE=true && webpack",
+    "build:case1": "webpack --config webpack.case1.js",
+    "build:case2": "webpack --config webpack.case2.js",
+    "build:case3": "webpack --config webpack.case3.js",
+    "build:case4": "webpack --config webpack.case4.js",
+    "build:case4-no-shaking": "webpack --config webpack.case4-no-shaking.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@babel/core": "^7.27.1",
+    "@babel/preset-env": "^7.27.1",
+    "babel-loader": "^9.2.1",
+    "html-webpack-plugin": "^5.6.0",
+    "terser-webpack-plugin": "^5.3.14",
+    "webpack": "^5.99.7",
+    "webpack-bundle-analyzer": "^4.10.2",
+    "webpack-cli": "^6.0.1"
+  },
+  "dependencies": {
+    "lodash": "^4.17.21",
+    "moment": "^2.29.4",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  }
+}
